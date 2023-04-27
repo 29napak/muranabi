@@ -31,7 +31,7 @@ export default function InfoBlog() {
       <p>{info.title}</p>
       
      {/* <Link to={`/posts/${info.id}`} >link</Link> */}
-     <Link to={`/posts/${info.slug}`} state={{id:`${info.id}`}}>link</Link>
+     <Link to={`/special/shinnouhai2023/posts/${info.slug}`} state={{id:`${info.id}`}}>link</Link>
      </div>
     ))}
     </>

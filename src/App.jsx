@@ -21,16 +21,16 @@ let activeClassName = "nav-active"
     <BrowserRouter>
    
     <nav>
-      <NavLink end to="/" className={({isActive}) => isActive ? activeClassName : undefined}>home</NavLink>
-      <NavLink to="/about" className={({isActive}) => isActive ? activeClassName : undefined}>about</NavLink>
-      <NavLink to="/contact" className={({isActive}) => isActive ? activeClassName : undefined}>contact</NavLink>
+      <NavLink end to="/special/shinnouhai2023/" className={({isActive}) => isActive ? activeClassName : undefined}>home</NavLink>
+      <NavLink to="/special/shinnouhai2023/about" className={({isActive}) => isActive ? activeClassName : undefined}>about</NavLink>
+      <NavLink to="/special/shinnouhai2023/contact" className={({isActive}) => isActive ? activeClassName : undefined}>contact</NavLink>
     </nav>
 
     <Routes>
-      <Route path="/" element={<Home/>}></Route>
-      <Route path="/about" element={<About/>}></Route>
-      <Route path="/contact" element={<Contact/>}></Route>
-      <Route path="/posts/:id" element={<Blog/>}></Route>
+      <Route path="/special/shinnouhai2023/" element={<Home/>}></Route>
+      <Route path="/special/shinnouhai2023/about" element={<About/>}></Route>
+      <Route path="/special/shinnouhai2023/contact" element={<Contact/>}></Route>
+      <Route path="/special/shinnouhai2023/posts/:id" element={<Blog/>}></Route>
       <Route path="*" element={<Error/>}></Route>
     </Routes>
     
